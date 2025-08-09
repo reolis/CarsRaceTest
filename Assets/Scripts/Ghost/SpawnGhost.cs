@@ -12,7 +12,7 @@ public class SpawnGhost : MonoBehaviour
     void Start()
     {
         ghost.SetActive(false);
-        StartCoroutine(WaitForCountAndSpawn());
+        StartCoroutine(WaitForCountAndSpawn()); // Для ожидания, когда будет count = 1
     }
 
     System.Collections.IEnumerator WaitForCountAndSpawn()

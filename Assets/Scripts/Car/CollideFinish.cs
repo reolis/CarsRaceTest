@@ -26,7 +26,7 @@ public class CollideFinish : MonoBehaviour
         {
             Debug.Log("Finish is reached!");
             Debug.Log($"Positions list: {string.Join(';', CarProcess.positions)}");
-            count++;
+            count++; // —читаем количество гонок
 
             if (rb != null)
             {

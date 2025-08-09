@@ -22,10 +22,10 @@ public class CarProcess : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        positions = new List<Vector3>();
-        quaternions = new List<Quaternion>();
-        startPosition = Car.transform.position;
-        startRotation = Car.transform.rotation;
+        positions = new List<Vector3>(); // Для призрака
+        quaternions = new List<Quaternion>(); // Для призрака
+        startPosition = Car.transform.position; // Позиции для респавна
+        startRotation = Car.transform.rotation; // Повороты для респавна
     }
 
     // Update is called once per frame
@@ -51,6 +51,7 @@ public class CarProcess : MonoBehaviour
         }
     }
 
+    // Сохранить прогресс
     private void SaveProgress()
     {
         positions.Add(rb.transform.position);
